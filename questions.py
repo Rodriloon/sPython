@@ -28,7 +28,9 @@ answers = [
 correct_answers_index = [1, 2, 0, 3, 1]
 
 # Combinar las tres listas usando zip
-questions_to_ask = random.choices(list(zip(questions, answers, correct_answers_index)), k=3)
+questions_combined = list(zip(questions, answers, correct_answers_index))
+
+questions_to_ask = random.sample(questions_combined, k=3)
 
 puntaje = float(0)
 
