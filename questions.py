@@ -54,9 +54,9 @@ for question, answer_choices, correct_answer_index in questions_to_ask:
         
         # Verificamos que la respuesta esté dentro del rango
         if not (1 <= user_answer <= 4):
-            print('Respuesta no válida')
+            print('Respuesta no valida')
             sys.exit(1)  
-        
+
         # Restamos 1 para que la respuesta esté en el rango de índices
         user_answer -= 1
 
@@ -65,15 +65,15 @@ for question, answer_choices, correct_answer_index in questions_to_ask:
             print("¡Correcto!")
             puntaje += 1
             break
+        #Cada vez que hace un intento fallido, se le restan puntos
         elif puntaje != 0:
-                puntaje -= 0.5
+            puntaje -= 0.5
     else:
         # Si el usuario no responde correctamente después de 2 intentos,
         # se muestra la respuesta correcta
-        print("La respuesta correcta es:")
+        print("Incorrecto. La respuesta correcta es:")
         print(answer_choices[correct_answer_index])
-
-    # Se imprime un blanco al final de la pregunta  
+    # Se imprime un blanco al final de la pregunta
     print()
 
 print(f"Tu puntaje final fue de: {puntaje}")
