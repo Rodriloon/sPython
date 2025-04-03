@@ -19,4 +19,4 @@ Si no tienes Jupyter instalado, puedes hacerlo con:
 a. Para ejecutar el código, abre el notebook con Jupyter:
 - jupyter notebook notebooks/ranking_notebook.ipynb
 b. Tambien puedes ejecutar el codigo desde Python:
-- python src/E10.py
+- python src/ranking.py
