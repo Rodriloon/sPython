@@ -12,7 +12,7 @@
 - source venv/bin/activate
 3. Instalar dependencias:
 Para ejecutar este proyecto, es necesario tener Python 3 instalado. Se recomienda utilizar un entorno virtual para instalar las dependencias.
-- 
+- pip install -r requirements.txt
 Si no tienes Jupyter instalado, puedes hacerlo con:
 - pip install notebook 
 4.Ejecucion del programa:
