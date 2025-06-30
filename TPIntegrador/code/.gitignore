@@ -1,0 +1,13 @@
+# Archivos temporales
+*.pyc
+__pycache__/
+
+# Datos generados
+#/fusion_eph/*.csv
+
+# Notebooks con salida
+*.ipynb_checkpoints
+
+# Entornos virtuales
+.venv/
+env/
